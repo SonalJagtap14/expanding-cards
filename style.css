@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(45deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.parent {
+    margin: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imagecard {
+    border-radius: 30px;
+    height: 80vh;
+    width: 100px;
+    flex: 0.5;
+    transition: all 0.5s ease-in;
+    margin: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.imagecard.active {
+    flex: 3;
+}
